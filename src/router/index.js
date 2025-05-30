@@ -16,17 +16,17 @@ const routes = [
     component: Home
   },
   {
-    path: '/menu',
+    path: '/Menu',
     name: 'Menu',
     component: Menu
   },
   {
-    path: '/order',
+    path: '/Order',
     name: 'Order',
     component: Order
   },
   {
-    path: '/profile',
+    path: '/Profile',
     name: 'Profile',
     component: Profile
   },
@@ -36,17 +36,17 @@ const routes = [
     component: Login
   },
   {
-    path: '/admin',
+    path: '/Admin',
     name: 'AdminDashboard',
     component: AdminDashboard,
     children: [
       {
-        path: 'manage-food',
+        path: 'Manage-food',
         name: 'ManageFood',
         component: ManageFood
       },
       {
-        path: 'view-orders',
+        path: 'View-orders',
         name: 'ViewOrders',
         component: ViewOrders
       }
