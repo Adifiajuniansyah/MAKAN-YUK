@@ -3,11 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import Menu from '../components/Menu.vue'
 import Order from '../components/Order.vue'
-import Profile from '../components/Profile.vue'
+import Profile from '../components/profile.vue'
 import AdminDashboard from '../components/AdminDashboard.vue'
 import ManageFood from '../components/ManageFood.vue'
 import ViewOrders from '../components/ViewOrders.vue'
-import Login from '../components/Login.vue'  // import komponen Login
+import Login from '../components/Login.vue' 
 
 const routes = [
   {
