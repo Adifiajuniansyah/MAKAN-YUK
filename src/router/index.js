@@ -41,12 +41,12 @@ const routes = [
     component: AdminDashboard,
     children: [
       {
-        path: '/Managefood',
+        path: 'Managefood',
         name: 'ManageFood',
         component: ManageFood
       },
       {
-        path: '/ViewOrders',
+        path: 'ViewOrders',
         name: 'ViewOrders',
         component: ViewOrders
       }
