@@ -26,7 +26,7 @@ const routes = [
     component: Order
   },
   {
-    path: '/Profile',
+    path: '/profile',
     name: 'Profile',
     component: Profile
   },
