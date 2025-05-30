@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import Menu from '../components/Menu.vue'
 import Order from '../components/Order.vue'
-import Profile from '@/components/Profile.vue'
+import Profile from '../components/Profile.vue'
 import AdminDashboard from '../components/AdminDashboard.vue'
 import ManageFood from '../components/ManageFood.vue'
 import ViewOrders from '../components/ViewOrders.vue'
@@ -41,7 +41,7 @@ const routes = [
     component: AdminDashboard,
     children: [
       {
-        path: '/Manage-food',
+        path: '/Managefood',
         name: 'ManageFood',
         component: ManageFood
       },
