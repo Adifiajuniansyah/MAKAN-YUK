@@ -1,65 +1,82 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <nav class="bg-white shadow-md p-4">
-      <ul class="flex flex-wrap justify-center gap-4 text-gray-700 font-medium">
-        <li>
-          <router-link 
-            to="/" 
-            class="px-4 py-2 rounded hover:bg-gray-200 transition"
-            :class="{ 'bg-blue-500 text-white': $route.path === '/' }"
-          >
-            Home
-          </router-link>
-        </li>
-        <li>
-          <router-link 
-            to="/menu" 
-            class="px-4 py-2 rounded hover:bg-gray-200 transition"
-            :class="{ 'bg-blue-500 text-white': $route.path === '/menu' }"
-          >
-            Menu
-          </router-link>
-        </li>
-        <li>
-          <router-link 
-            to="/order" 
-            class="px-4 py-2 rounded hover:bg-gray-200 transition"
-            :class="{ 'bg-blue-500 text-white': $route.path === '/order' }"
-          >
-            Order
-          </router-link>
-        </li>
-        <li>
-          <router-link 
-            to="/history" 
-            class="px-4 py-2 rounded hover:bg-gray-200 transition"
-            :class="{ 'bg-blue-500 text-white': $route.path === '/history' }"
-          >
-            History
-          </router-link>
-        </li>
-        <li>
-          <router-link 
-            to="/profile" 
-            class="px-4 py-2 rounded hover:bg-gray-200 transition"
-            :class="{ 'bg-blue-500 text-white': $route.path === '/profile' }"
-          >
-            Profile
-          </router-link>
-        </li>
-        <li>
-          <router-link 
-            to="/admin/manage-food" 
-            class="px-4 py-2 rounded hover:bg-gray-200 transition"
-            :class="{ 'bg-blue-500 text-white': $route.path.startsWith('/admin') }"
-          >
-            Admin
-          </router-link>
-        </li>
-      </ul>
-    </nav>
-    <main class="p-6">
+  <div id="app">
+    <header class="navbar">
+      <h1 class="logo">🍽️ MakanYuk</h1>
+      <nav>
+        <RouterLink to="/" exact-active-class="active">Home</RouterLink>
+        <RouterLink to="/Menu" exact-active-class="active">Menu</RouterLink>
+        <RouterLink to="/Order" exact-active-class="active">Order</RouterLink>
+        <RouterLink to="/Profile" exact-active-class="active">Profile</RouterLink>
+      </nav>
+    </header>
+
+    <main class="main-content">
       <router-view />
     </main>
+
+    <footer class="footer">
+      <p>© 2025 MakanYuk App. All rights reserved.</p>
+    </footer>
   </div>
 </template>
+
+<script>
+export default {
+  name: "App"
+};
+</script>
+
+<style scoped>
+/* Layout */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f9fafb;
+}
+
+/* Footer */
+.footer {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+</style>
