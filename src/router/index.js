@@ -36,7 +36,7 @@ const routes = [
     component: Login
   },
   {
-    path: '/Admin',
+    path: '/admin',
     name: 'AdminDashboard',
     component: AdminDashboard,
     children: [
