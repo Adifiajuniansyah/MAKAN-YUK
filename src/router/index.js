@@ -4,7 +4,7 @@ import Home from '../components/Home.vue'
 import Menu from '../components/Menu.vue'
 import Order from '../components/Order.vue'
 import Profile from '../components/Profile.vue'
-import AdminDashboard from '../components/AdminDashboard.vue'
+import AdminDashboard from "../components/AdminDashboard.vue"; 
 import ManageFood from '../components/ViewOrdersTemp.vue'
 import Login from '../components/Login.vue' 
 import ViewOrdersTemp from '../components/ViewOrdersTemp..vue'
