@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'ViewOrders',
+  name: 'ViewOrdersTemp',
 };
 </script>

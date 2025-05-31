@@ -7,6 +7,7 @@ import Profile from '../components/Profile.vue'
 import AdminDashboard from '../components/AdminDashboard.vue'
 import ManageFood from '../components/ViewOrdersTemp.vue'
 import Login from '../components/Login.vue' 
+import ViewOrdersTemp from '../components/ViewOrdersTemp..vue'
 
 const routes = [
   {
@@ -45,9 +46,9 @@ const routes = [
         component: ManageFood
       },
       {
-        path: 'ViewOrders',
+        path: 'ViewOrdersTempt',
         name: 'ViewOrders',
-        component: ViewOrders
+        component: ViewOrdersTemp
       }
     ]
   },
